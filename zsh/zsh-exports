@@ -1,0 +1,39 @@
+#!/bin/sh
+
+export MANPAGER='nvim +Man!'
+export MANWIDTH=999
+
+export HISTFILE="${XDG_DATA_HOME:-$HOME/.local/share}/history"
+HISTSIZE=1000000
+SAVEHIST=1000000
+
+export CARGO_HOME="${XDG_DATA_HOME:-$HOME/.local/share}/cargo"
+export WGETRC="${XDG_CONFIG_HOME:-$HOME/.config}/wget/wgetrc"
+export NPM_CONFIG_USERCONFIG=$XDG_CONFIG_HOME/npm/npmrc
+export LESSHISTFILE="-"
+export WGETRC="${XDG_CONFIG_HOME:-$HOME/.config}/wget/wgetrc"
+export GNUPGHOME="${XDG_DATA_HOME:-$HOME/.local/share}/gnupg"
+
+export GOPATH="$HOME/Programming/golang/"
+
+export TERMINAL="foot"
+
+# export BROWSER="qutebrowser"
+
+export EDITOR="emacsclient -t"                  # $EDITOR opens in terminal
+export VISUAL="emacsclient -c -a emacs"         # $VISUAL opens in GUI mode
+
+# bmenu
+export BEMENU_OPTS="
+--fb #303446 
+--ff #81c8be 
+--nb #303446 
+--nf #f2d5cf 
+--tb #303446 
+--hb #303446 
+--tf #ca9ee6 
+--hf #8caaee 
+--nf #f2d5cf 
+--af #f2d5cf 
+--ab #303446 
+--fn 'Iosevka Term Curly 11'"
