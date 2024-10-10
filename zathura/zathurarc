@@ -1,0 +1,27 @@
+set selection-clipboard clipboard
+set statusbar-h-padding 0
+set statusbar-v-padding 0
+set page-padding 1
+set sandbox 
+set guioptions h
+
+set default-bg "#"
+
+set window-height 3000
+set window-width 3000
+
+map m scroll half-up
+map o scroll half-down
+map u scroll up
+map e scroll down
+
+map U zoom in
+map E zoom out
+
+map r reload
+map R rotate
+
+map f toggle_fullscreen 
+map [fullscreen] f toggle_fullscreen
+
+

@@ -1,5 +1,10 @@
 #!/bin/sh
-#
+
+# Path in tab name
+function rename_wezterm_title {
+  echo "\x1b]1337;SetUserVar=panetitle=$(echo -n $1 | base64)\x07"
+}
+
 setopt NO_BG_NICE
 setopt AUTO_CD
 
@@ -69,4 +74,4 @@ compinit
 # Edit line in vim with ctrl-e:
 autoload edit-command-line; zle -N edit-command-line
 
-export LC_ALL="en_US.UTF-8"
+export LC_ALL="en_US.UTF-8" 
